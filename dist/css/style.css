@@ -1,0 +1,143 @@
+body {
+	overflow-y: auto;
+}
+
+.page-single {
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 1rem 0;
+}
+
+.navbar-overlap:after {
+	content: '';
+	height: 9rem;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background: inherit;
+	z-index: -1;
+	box-shadow: inherit;
+}
+
+.navbar-dark {
+	background: #43b380;
+}
+
+.navbar-nav .nav-item {
+	white-space: nowrap;
+}
+
+a {
+	color: #43b380;
+}
+
+a:hover {
+	color: #3ca173;
+}
+
+a.link-bg {
+	color: rgba(255, 255, 255, .72);
+}
+
+a.link-bg:hover {
+	color: rgba(255, 255, 255, .5);
+}
+
+.btn-primary {
+	background-color: #43b380;
+	border-color: #43b380;
+}
+
+.btn-primary:hover,
+.btn-primary.active,
+.btn-primary:active,
+.btn-primary.focus,
+.btn-primary:focus {
+	background-color: #3ca173;
+	border-color: #3ca173;
+}
+
+.nav-tabs .nav-link.active {
+	border-bottom-color: #43b380;
+}
+
+.table th {
+	font-weight: 600;
+	color: #354052;
+}
+
+@media (min-width: 64rem) {
+	.w-150 {
+		width: 150px;
+	}
+}
+
+.form-control.is-danger {
+	border-color: #cd201f;
+}
+
+.form-control.is-success {
+	border-color: #5eba00;
+}
+
+.bg-green {
+	background: #43b380;
+}
+
+.text-break {
+	display: block !important;
+}
+
+.theme-dark .navbar-overlap:after {
+	content: none;
+}
+
+.theme-dark table th {
+	color: #f5f7fb;
+}
+
+.theme-dark .chart rect {
+	fill: #354052;
+}
+
+.theme-dark .chart text {
+	fill: #ffffff;
+	mix-blend-mode: difference;
+	font-weight: 400;
+}
+
+.o-auto {
+	overflow: auto !important;
+}
+
+.status-icon {
+	content: '';
+	width: 0.5rem;
+	height: 0.5rem;
+	display: inline-block;
+	background: currentColor;
+	border-radius: 50%;
+	-webkit-transform: translateY(-1px);
+	transform: translateY(-1px);
+	margin-right: .375rem;
+	vertical-align: middle;
+}
+
+.bg-deposit {
+	background-color: #5eba00;
+}
+
+.bg-withdraw {
+	background-color: #f1c40f;
+}
+
+table a {
+	font-size: .70rem;
+}
